@@ -1,0 +1,209 @@
+.info-zone {
+  color: #4f4f4f;
+  //   margin: 20px;
+  //   position: absolute;
+  vertical-align: middle;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 500px) {
+  .img-logo-accompagnement {
+    height: auto;
+    width: 100%;
+  }
+  .img-logo-admission {
+    height: auto;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 500px) {
+  .img-logo-accompagnement {
+    height: auto;
+    width: 300px;
+    margin-left: 50px;
+  }
+  .img-logo-admission {
+    height: auto;
+    width: 300px;
+    margin-left: 50px;
+  }
+}
+
+.info-zone {
+  h4::before {
+    content: "";
+  }
+}
+.blk {
+  display: inline;
+}
+.p-info-zone {
+  padding-left: 20px;
+}
+.btn-demarrer {
+  float: right;
+}
+.caution-bancaire {
+  .step-arrow-nav {
+    .done {
+      background-color: #21ace4 !important;
+      color: #f2f2f2 !important;
+    }
+    .active {
+      background-color: #e1ebfd !important;
+      color: #405189 !important;
+    }
+  }
+}
+
+select[multiple] {
+  height: 100% !important;
+}
+button.nexttab {
+  background-color: #21ace4;
+ // border-color: #0039e4;
+}
+button.nexttab:hover {
+  background-color: #2385ba;
+  //border-color: #0039e4;
+}
+
+.progress-nav .nav {
+  // justify-content: space-around;
+}
+.progress-nav-item {
+  text-align: center !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+.progress-label {
+  position: relative;
+  // margin-left: -30px;
+  // margin-top: 20px;
+}
+.col-progress-indicators {
+  // justify-content: space-evenly;
+  text-align: -webkit-center;
+}
+.progress-nav {
+  .progress {
+    height: 4px !important;
+    margin-top: -10px;
+    width: 83.33%;
+    margin-left: 8.33% !important;
+    // margin-right: auto !important;
+    transform: rotateZ(90deg);
+    position: relative;
+    left: -4px;
+    top: 2px;
+  }
+  button.nav-link {
+    margin-bottom: 10px;
+  }
+}
+.table-suiv-accomp {
+  border: 2px solid #cbcbcb !important;
+  border-radius: 10px 10px 0px 0px;
+  min-height: 300px;
+  thead tr th {
+    background-color: #cbcbcb;
+  }
+  thead tr {
+    background-color: #cbcbcb;
+  }
+}
+h5 {
+  .table-title {
+    color: #0039e4;
+  }
+}
+.card-body-suivi {
+  // padding: 0 0 0 0;
+}
+
+.progress-nav .nav .nav-link {
+  height: 3rem !important;
+  width: 3rem !important;
+  background-color: #0039e4;
+  border: 4px dashed #cbcbcb;
+  color: #cbcbcb;
+}
+.progress-nav .nav .nav-link.active {
+  background-color: darkgrey !important;
+  border: 4px solid darkgrey !important;
+}
+.progress-nav .nav .nav-link.done {
+  background-color: #ffffff;
+  border: 4px solid white;
+  color: blue;
+}
+.progress-nav {
+  // margin-top: 30px !important;
+  margin-right: 0px !important;
+}
+.progress-nav nav {
+  margin-right: 0px !important;
+}
+.prive-bg-primary {
+  background-color: #0039e4;
+}
+.prive-btn-primary {
+  background-color: #0039e4;
+  color: white;
+}
+.prive-btn-primary-transparent {
+  color: #0039e4;
+  background-color: transparent;
+}
+.prive-vertical-nav {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 500px;
+  background-color: #0039e4;
+  color: white;
+  border-radius: 10px 0px 0px 0px;
+  // height: 100vh;
+  margin-right: 0px !important;
+}
+.col-progress-indicators {
+  width: 100% !important;
+  text-align: left;
+  margin-top: 25px;
+  margin-left: 20px;
+  min-width: 180px;
+}
+.nav-item {
+  display: inline-block;
+}
+.my-content {
+  background-color: white;
+  border-radius: 10px 0px 0px 10px !important;
+  
+  .progress {
+    height: 4px !important;
+    margin-top: 36px;
+    width: 473px;
+    margin-left: 8.33% !important;
+    transform: rotateZ(90deg);
+    position: absolute;
+    left: -220px;
+    top: 238px;
+    background-color: darkgrey;
+  }
+  .my-nav-progress-bar {
+    background-color: #0039e4;
+    border-radius: 10px 0 0 10px;
+    min-height: 600px;
+  }
+}
+.progress-bar {
+  background-color: #ffffff;
+}
+
+.img-video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

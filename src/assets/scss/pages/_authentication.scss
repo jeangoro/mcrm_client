@@ -1,0 +1,354 @@
+// @import "../../scss/config/default/variables";
+//
+// _authentication.scss
+//
+
+.auth-page-wrapper {
+  .auth-page-content {
+    padding-bottom: $footer-height;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+  }
+  .footer {
+    bottom: -50px;
+    left: 0;
+    background-color: transparent;
+    color: var(--#{$prefix}body-color);
+  }
+}
+
+.auth-one-bg-position {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 380px;
+
+  @media (max-width: 575.98px) {
+    height: 280px;
+  }
+}
+
+.auth-one-bg {
+  // background: $mcrm-gradient;
+  // background-color: $mcrm;
+  // background-image: url("../../images/auth-one-bg.jpg");
+  background-position: center;
+  background-size: cover;
+
+  .bg-overlay {
+    background: $mcrm-gradient;
+    // background: linear-gradient(to right, darken($primary, 6%), $primary);
+    opacity: 0.9;
+  }
+}
+
+.shape {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+  > svg {
+    width: 100%;
+    height: auto;
+    fill: var(--#{$prefix}body-bg);
+  }
+}
+
+// auth-pass-inputgroup
+
+.auth-pass-inputgroup {
+  input[type="text"] + .btn .ri-eye-fill {
+    &:before {
+      content: "\ecb6";
+    }
+  }
+}
+
+.particles-js-canvas-el {
+  position: relative;
+}
+
+// signin card title
+
+.signin-other-title {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    right: 0;
+    border-top: 1px dashed var(--#{$prefix}border-color);
+    top: 10px;
+  }
+
+  .title {
+    display: inline-block;
+    position: relative;
+    z-index: 9;
+    background-color: var(--#{$prefix}card-bg-custom);
+    padding: 2px 16px;
+  }
+}
+
+// Auth cover
+
+.auth-bg-cover {
+  background: $mcrm-btn-primary-bg-gradient;
+
+  > .bg-overlay {
+    background-image: url("../../images/cover-pattern.png");
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    background-color: transparent;
+  }
+
+  .footer {
+    color: rgba($white, 0.5);
+  }
+}
+
+//passowrd validations
+#password-contain {
+  display: none;
+
+  p {
+    padding-left: 13px;
+
+    &.valid {
+      color: $success;
+
+      &::before {
+        position: relative;
+        left: -8px;
+        content: "✔";
+      }
+    }
+
+    &.invalid {
+      color: $danger;
+
+      &::before {
+        position: relative;
+        left: -8px;
+        content: "✖";
+      }
+    }
+  }
+}
+
+// Style personnalisé pour la nouvelle page d'authentification
+.login-radio {
+  display: inline;
+  padding: 2px !important;
+}
+.login-radios {
+  justify-content: space-evenly;
+  display: flex;
+}
+.login-buttons-group {
+  button {
+    margin-top: 20px;
+    border-radius: 50%;
+    padding-top: 2px !important;
+    padding-bottom: 8px !important;
+    font-weight: 700;
+  }
+  .btn-password {
+    width: 20%;
+  }
+}
+.login-form-bg {
+  background-color: white;
+  display: block;
+  box-shadow: 0px 5px 10px #1b2b761f;
+  border-radius: 10px;
+  padding-left: 5% !important;
+  padding-right: 5% !important;
+  h4 {
+    color: #0039e4;
+  }
+  label {
+    margin-bottom: 3px !important;
+  }
+}
+#btn-eraseTJK {
+  border-radius: 50%;
+  padding-top: 2px !important;
+  padding-bottom: 8px !important;
+  border: 1px solid gray;
+}
+
+.register-label {
+  display: grid;
+  text-align: left;
+}
+.form-input {
+  width: auto;
+  border-radius: 8px;
+}
+.form-switch-login {
+  display: inline-block;
+}
+.login-note {
+  text-align: justify;
+}
+.login-logo {
+  display: grid;
+}
+.card-note {
+  box-shadow: 0px 5px 10px #1b2b761f;
+  .card-body {
+    h4 {
+      background: $mcrm-btn-primary-bg-gradient;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+  }
+}
+.prive-input-error {
+  border: 2px solid red;
+  // box-shadow: 0px 0px 10px red;
+}
+// .phone-group {
+// }
+.termes-politique {
+  a {
+    display: contents;
+  }
+}
+.login-radio:checked {
+  background-color: #0039e4;
+  border-color: #0039e4;
+  border: 8px solid #0039e4;
+  padding: 0px !important;
+}
+.btn-password-num:active {
+  color: white !important;
+  background-color: #0039e4 !important;
+}
+
+@media (max-width: 575.98px) {
+  .login-form-bg {
+    box-shadow: 0px 0px 0px transparent;
+  }
+  // .btn-password-num:not(hover) {
+  //   color: black;
+  //   background-color: rgb(208, 204, 204);
+  // }
+}
+
+.login-user-icon {
+  font-size: 50px !important;
+}
+
+// for international mobile phone number
+ul {
+  top: 100% !important;
+  transform: translateY(0%) !important;
+}
+
+.iti {
+  position: relative;
+  display: inline-block;
+}
+
+input[type="tel"] {
+  padding-right: 6px;
+  margin-left: 0;
+
+  position: relative;
+  z-index: 0;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  margin-right: 0;
+  border: 1px solid #ccc;
+  width: 270px;
+  height: 35px;
+  /* padding: 6px 12px; */
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
+}
+
+button {
+  color: #fff;
+  background-color: #428bca;
+  border: 1px solid #357ebd;
+  height: 39px;
+  margin: 0;
+  padding: 6px 20px;
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+button:hover {
+  background-color: #3276b1;
+  border-color: #285e8e;
+  cursor: pointer;
+}
+.force-scroll {
+  overflow-y: scroll;
+  height: 200px;
+}
+.validation-code-form {
+  input {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: initial;
+  }
+}
+a {
+  h4 {
+    text-decoration: underline;
+  }
+}
+
+.btn-deconnexion {
+  margin: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+#accepte_contrat {
+  height: 30px;
+}
+
+.termes-politique {
+  align-items: center;
+}
+
+.PhoneInputCountryIcon {
+  svg {
+    margin-top: -10px;
+  }
+}
+
+.validation-code-form {
+  div {
+    div {
+      padding: 1px !important;
+      display: inline-block;
+    }
+  }
+}
+
+.prive-btn-primary {
+  background-color: #0039e4 !important;
+  color: white !important;
+}

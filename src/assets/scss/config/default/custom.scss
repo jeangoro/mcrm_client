@@ -1,0 +1,447 @@
+/*
+Template Name: Velzon - Admin & Dashboard Template
+Author: Themesbrand
+Website: https://themesbrand.com/
+Contact: support@themesbrand.com
+File: Custom Css File
+*/
+// @import "../../config/default/variables";
+
+.css-b62m3t-container {
+  .css-13cymwt-control {
+    background-color: var(--#{$prefix}gray-200);
+    border-color: var(--#{$prefix}border-color);
+    &:hover {
+      border-color: var(--#{$prefix}border-color);
+    }
+  }
+  .css-t3ipsp-control {
+    background-color: var(--#{$prefix}gray-200);
+    border-color: var(--#{$prefix}border-color);
+    box-shadow: none;
+    &:hover {
+      border-color: var(--#{$prefix}border-color) !important;
+    }
+  }
+  .css-1nmdiq5-menu {
+    background-color: var(--#{$prefix}gray-200);
+    .css-10wo9uf-option {
+      cursor: pointer;
+      background-color: var(--#{$prefix}gray-200);
+      &:active {
+        background-color: var(--#{$prefix}gray-200);
+      }
+    }
+    .css-d7l1ni-option {
+      cursor: pointer;
+      background-color: var(--#{$prefix}gray-100);
+    }
+  }
+  .css-1p3m7a8-multiValue {
+    // background-color: var(--#{$variable-prefix}light);
+    border-radius: 20px;
+    background-color: $mcrm-primary-bg;
+    color: $mcrm-white;
+  }
+  .css-wsp0cs-MultiValueGeneric {
+    // color: $heading-color;
+    color: $mcrm-white;
+  }
+  .css-12jo7m5 {
+    color: $heading-color;
+  }
+  .css-6j8wv5-Input,
+  .css-qc6sy-singleValue {
+    color: $heading-color;
+  }
+
+  .css-1dimb5e-singleValue {
+    color: var(--vz-body-color);
+  }
+}
+
+.marketplace-swiper .swiper-button-next,
+.marketplace-swiper .swiper-button-prev {
+  top: 24px;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 22px;
+  line-height: 2;
+}
+
+.marquee div {
+  display: block;
+  width: 200%;
+  height: 30px;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee 35s linear infinite;
+}
+
+.marquee span {
+  float: left;
+  width: 50%;
+}
+
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+// Data Table
+
+.kVrXuC,
+.dwPlXY,
+.gKbhqU,
+.iSAVrt {
+  background-color: $table-bg !important;
+  color: $table-color !important;
+}
+
+.fyrdjl {
+  color: rgba(var(--#{$prefix}body-color-rgb), 0.54) !important;
+  fill: rgba(var(--#{$prefix}body-color-rgb), 0.54) !important;
+}
+
+.fyrdjl:disabled {
+  color: rgba(var(--#{$prefix}body-color-rgb), 0.18) !important;
+  fill: rgba(var(--#{$prefix}body-color-rgb), 0.18) !important;
+}
+
+.iSAVrt {
+  background-color: var(--#{$prefix}card-bg-custom) !important;
+  border-bottom-color: $table-border-color !important;
+}
+
+.dwPlXY:not(:last-of-type) {
+  border-bottom-color: $table-border-color !important;
+}
+
+// Mobility CRM Style
+
+.mcrm-btn {
+  background: $mcrm-btn-primary-bg-gradient !important;
+  // border-color: $mcrm-btn-primary-bg !important;
+  border: none;
+  color: white !important;
+  margin-top: 0px;
+  // border-color: none;
+}
+.mcrm-btn:hover {
+  // background-color: $mcrm-btn-primary-bg-hover !important;
+  background: $mcrm-btn-primary-bg-gradient !important;
+  color: white !important;
+  opacity: 0.7;
+}
+.mcrm-btn-danger:hover {
+  // background-color: $mcrm-btn-primary-bg-hover !important;
+  background: $mcrm-danger !important;
+  color: white !important;
+  opacity: 0.7;
+}
+.mcrm-btn:disabled {
+  // background-color: $mcrm-btn-primary-bg-hover !important;
+  background: $mcrm-btn-primary-bg-gradient !important;
+  color: white !important;
+  opacity: 0.4;
+}
+.mcrm-btn-danger:disabled {
+  // background-color: $mcrm-btn-primary-bg-hover !important;
+  background: $mcrm-danger !important;
+  color: white !important;
+  opacity: 0.4;
+}
+.mcrm-btn:active {
+  background-color: $mcrm-btn-primary-bg !important;
+  color: white !important;
+  border: none;
+  // border-color: none;
+}
+.mcrm-btn-danger {
+  background-color: $mcrm-danger;
+  border: none;
+  color: $mcrm-white;
+  margin-top: 0px;
+}
+.mcrm-text-primary {
+  background: $mcrm-btn-info-bg !important;
+}
+.mcrm-color {
+  color: $mcrm-btn-primary-bg-hover;
+}
+.mcrm-text-color {
+  color: $mcrm-text-color;
+}
+.mcrm-icon-bg {
+  color: $mcrm-btn-info-bg;
+}
+
+.mcrm-bg {
+  background: $mcrm-btn-primary-bg-gradient !important;
+}
+.modal-title {
+  display: contents;
+  color: white;
+}
+
+.btn-close {
+  --vz-btn-hover-bg: white;
+}
+.mcrm-grid-dropdown {
+  font-size: 12px !important;
+  font-family: "Helvetica Neue", "Segoe UI", helvetica, verdana, sans-serif !important;
+}
+.mcrm-grid-button {
+  height: 28px;
+  text-transform: lowercase !important;
+}
+.mcrm-info {
+  color: $mcrm-info !important;
+  div {
+    i {
+      color: $mcrm-info !important;
+    }
+  }
+}
+.mcrm-warning {
+  color: $mcrm-warning !important;
+  div {
+    i {
+      color: $mcrm-warning !important;
+    }
+  }
+}
+.mcrm-danger {
+  color: $mcrm-danger !important;
+  div {
+    i {
+      color: $mcrm-danger !important;
+    }
+  }
+}
+.mcrm-success {
+  color: $mcrm-success !important;
+  div {
+    i {
+      color: $mcrm-success !important;
+    }
+  }
+}
+
+.mcrm-btn-more-action-modal {
+  height: 120px;
+  width: 120px;
+  font-size: 12px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.mcrm-icon-more-action-modal {
+  font-size: 40px;
+  height: 40px !important;
+  display: inline-block;
+}
+
+.mcrm-float-bottom {
+  bottom: 10px;
+  right: 0px;
+  position: absolute;
+  width: 100%;
+  padding-right: 15px;
+  justify-content: center;
+}
+
+.react-lock-screen__ui {
+  width: 100%;
+  position: fixed;
+  border: 4px solid #333;
+  background: transparent;
+  text-align: center;
+  padding: 16px;
+  border-radius: 0px;
+  top: 0px; //calc(30% - 152px / 2);
+  left: 0px; //calc(49% - 300px / 2);
+}
+
+button {
+  padding: 5px 15px;
+  border: 0;
+  text-transform: uppercase;
+  background: #333;
+  color: #fff;
+  margin-top: 15px;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-content {
+  border: none;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+.project-swiper {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.btn-contact-details {
+  float: inline-end;
+  position: absolute;
+  top: 0px;
+  right: 2px;
+}
+
+#offcanvas-create {
+  width: 60%;
+}
+#offcanvas-filter {
+  width: 40%;
+}
+
+/*Client Dasbord Style */
+
+// .img-pub {
+//   height: auto;
+//   width: 250px;
+//   position: relative;
+//   float: right;
+// }
+.table-dashboard {
+  thead {
+    tr {
+      th {
+        background-color: #21ace4 !important;
+        color: white;
+      }
+    }
+  }
+}
+
+tbody {
+  background-color: white;
+}
+.btn-service {
+  background-color: #21ace4 !important;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.table-dashboard {
+  td {
+    button {
+      font-size: 20px !important;
+      margin-right: 10px;
+      background-color: #21ace4 !important;
+    }
+  }
+}
+
+.card-service {
+  text-align: center;
+  font-weight: 700;
+  h4 {
+    font-weight: 700;
+    color: #535353;
+  }
+  span {
+    background-color: #21ace4;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    i {
+      //   display: inline !important;
+      vertical-align: middle;
+      font-size: 100px;
+      color: white;
+    }
+  }
+}
+
+.card-service:hover {
+  scale: 1.05;
+}
+
+h4 {
+  font-weight: 700 !important;
+  color: #535353;
+}
+.link-voir-plus {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0045ac !important ;
+}
+button {
+  font-size: 20px !important;
+  margin-right: 10px;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+}
+
+.step-arrow-nav .nav .nav-link.active{
+  background-color: #0049b1;
+    color: #e9ecf4;
+    box-shadow: none;
+}
+
+.step-arrow-nav .nav .nav-link.active::before {
+  border-left-color: #0049b1 !important;
+}
+
+.btn-primary {
+  --vz-btn-color: #fff;
+  --vz-btn-bg: #0049b1;
+  --vz-btn-border-color: #405189;
+  --vz-btn-hover-color: #fff;
+  --vz-btn-hover-bg: #04113b;
+  --vz-btn-hover-border-color: #33416e;
+  --vz-btn-focus-shadow-rgb: 93, 107, 155;
+  --vz-btn-active-color: #fff;
+  --vz-btn-active-bg: #33416e;
+  --vz-btn-active-border-color: #303d67;
+  --vz-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --vz-btn-disabled-color: #fff;
+  --vz-btn-disabled-bg: #405189;
+  --vz-btn-disabled-border-color: #405189;
+}
+
+button {
+
+  text-transform: none !important;
+}
+
+.items-center{
+  align-items: center;
+
+}
+
+.row-acomp{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+.css-b62m3t-container .css-wsp0cs-MultiValueGeneric {
+  color: black;
+  background: white;
+}
+.bg-cardacc{
+  background-color: #bed6f6;
+ 
+  ;
+}

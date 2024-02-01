@@ -1,0 +1,89 @@
+.padding-2 {
+    padding: 2px;
+}
+.margin-5 {
+    margin: 5px;
+    display: inline-block;
+}
+.pull-right {
+    display: flex;
+    justify-content: flex-end;
+}
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.stats-value {
+    font-weight: bold;
+    font-size: 20px;
+}
+.stats-key {
+    color: #6B7280;
+    font-size: 15px;
+}
+.stats-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
+.dx-theme-generic-typography {
+    background-color: var(--vz-body-bg) !important;
+}
+.contacts-table {
+    background-color: var(--vz-body-bg) !important;
+}
+.table-action-button {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0;
+    margin-left: 5px;
+}
+.badge-md {
+    font-size: 12px;
+}
+.auth-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bx-msg{
+    width: 90px;
+    height: 100px;
+    margin: 30px
+}
+.bx-msg i{
+    font-size: 50px;
+}
+.small-icon {
+    display: block;
+    height: 10px;
+    margin-top: -30px;
+    i {
+        color: black;
+    }
+}
+.dx-datagrid .dx-datagrid-headers .dx-header-row > td {
+    outline: 0;
+    background: #f3f6f9;
+    color: black;
+    font-weight: bold;
+    height: 20px;
+    padding: 12px 9.6px;
+}
+.dx-pager .dx-pages .dx-page {
+    padding-bottom: 10px;
+}
+.error {
+    font-size: 16px;
+    color: red;
+    margin-top: 20px;
+}

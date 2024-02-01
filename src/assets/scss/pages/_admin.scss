@@ -1,0 +1,6 @@
+.nav-success.nav-tabs-custom .nav-link.active {
+  color: $mcrm-text-color;
+}
+.nav-success.nav-tabs-custom .nav-link.active::after {
+  background-color: $mcrm-text-color;
+}

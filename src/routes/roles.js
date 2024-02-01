@@ -1,0 +1,15 @@
+export const ROLE_CONTACT = "ROLE_CONTACT";
+export const ROLE_AGENDA = "ROLE_AGENDA";
+export const ROLE_PROFILE = "ROLE_PROFILE";
+export const ROLE_CHAT = "ROLE_CHAT";
+export const ROLE_MAILBOX = "ROLE_MAILBOX";
+export const ROLE_SERVICE = "ROLE_SERVICE";
+export const ROLE_BUSINESS_PROVIDER = "ROLE_BUSINESS_PROVIDER";
+export const ROLE_FINANCE = "ROLE_FINANCE";
+export const ROLE_MARKETING = "ROLE_MARKETING";
+export const ROLE_REPORTING = "ROLE_REPORTING";
+export const ROLE_GROUP = "ROLE_GROUP";
+export const ROLE_USER = "ROLE_USER";
+export const ROLE_ADMIN = "ROLE_ADMIN";
+export const ROLE_ADMIN_AGENCY = "ROLE_ADMIN_AGENCY";
+export const ROLE_DASHBOARD = "ROLE_DASHBOARD";
