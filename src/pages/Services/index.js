@@ -88,7 +88,8 @@ import Accompagne from './ServicesClient/Accompagnement';
                       <td>Aucun</td>
                       <td>01-12-2021 17:17</td>
                       <td>
-                        <button type="button" className="btn btn-md btn-primary">
+                      <button type="button" className="btn btn-md btn-primary"
+                        onClick={()=>navigate("/suivi-admission")}>
                           <i className="mdi mdi-eye"></i>
                         </button>
                         <button type="button" className="btn btn-md btn-primary">
@@ -108,7 +109,8 @@ import Accompagne from './ServicesClient/Accompagnement';
                       <td>Aucun</td>
                       <td>01-12-2021 17:17</td>
                       <td>
-                        <button type="button" className="btn btn-md btn-primary">
+                      <button type="button" className="btn btn-md btn-primary"
+                        onClick={()=>navigate("/suivi-cautionbancaire")}>
                           <i className="mdi mdi-eye"></i>
                         </button>
                         <button type="button" className="btn btn-md btn-primary">
@@ -128,7 +130,8 @@ import Accompagne from './ServicesClient/Accompagnement';
                       <td>Aucun</td>
                       <td>01-12-2021 17:17</td>
                       <td>
-                        <button type="button" className="btn btn-md btn-primary">
+                      <button type="button" className="btn btn-md btn-primary"
+                        onClick={()=>navigate("/suivibilletAvion")}>
                           <i className="mdi mdi-eye"></i>
                         </button>
                         <button type="button" className="btn btn-md btn-primary">
@@ -148,7 +151,8 @@ import Accompagne from './ServicesClient/Accompagnement';
                       <td>Aucun</td>
                       <td>01-12-2021 17:17</td>
                       <td>
-                        <button type="button" className="btn btn-md btn-primary">
+                      <button type="button" className="btn btn-md btn-primary"
+                        onClick={()=>navigate("/suiviassurance")}>
                           <i className="mdi mdi-eye"></i>
                         </button>
                         <button type="button" className="btn btn-md btn-primary">
@@ -168,7 +172,8 @@ import Accompagne from './ServicesClient/Accompagnement';
                       <td>Aucun</td>
                       <td>01-12-2021 17:17</td>
                       <td>
-                        <button type="button" className="btn btn-md btn-primary">
+                      <button type="button" className="btn btn-md btn-primary"
+                        onClick={()=>navigate("/suivilogement")}>
                           <i className="mdi mdi-eye"></i>
                         </button>
                         <button type="button" className="btn btn-md btn-primary">

@@ -20,7 +20,7 @@ const SuiviCautionBancaire = () => {
   // const [progressbarvalue, setprogressbarvalue] = useState(0);
   const [passedSteps, setPassedSteps] = useState([1]);
 
-  const [activeVerticalTab, setactiveVerticalTab] = useState(7);
+  const [activeVerticalTab, setactiveVerticalTab] = useState(4);
   const [progressbarvalue, setprogressbarvalue] = useState(0);
   // const [passedSteps, setPassedSteps] = useState([1]);
   // const [passedarrowSteps, setPassedarrowSteps] = useState([1]); 
@@ -84,7 +84,7 @@ const SuiviCautionBancaire = () => {
                           1<Progress value={progressbarvalue} style={{ height: "2px" }} />
                         </NavLink>
                       </NavItem>
-                      Paiement service
+                      Formulaire de demande
                     </Col>
                     <Col lg={2} md={2} className="col-progress-indicators">
                       <NavItem>
@@ -106,7 +106,7 @@ const SuiviCautionBancaire = () => {
                           2
                         </NavLink>
                       </NavItem>
-                      Pré-entretien
+                      Entretien 
                     </Col>
                     <Col lg={2} md={2} className="col-progress-indicators">
                       <NavItem>
@@ -121,14 +121,14 @@ const SuiviCautionBancaire = () => {
                             "rounded-pill"
                           )}
                           onClick={() => {
-                            toggleTab(3, 40);
+                            toggleTab(3, 50);
                           }}
                           tag="button"
                         >
                           3
                         </NavLink>
                       </NavItem>
-                      Signature Contrat
+                      Joindre le RIB 
                     </Col>
                     <Col lg={2} md={2} className="col-progress-indicators">
                       <NavItem>
@@ -143,66 +143,24 @@ const SuiviCautionBancaire = () => {
                             "rounded-pill"
                           )}
                           onClick={() => {
-                            toggleTab(4, 60);
+                            toggleTab(4, 80);
                           }}
                           tag="button"
                         >
                           4
                         </NavLink>
                       </NavItem>
-                      Paiement
+                      Joindre  l’AVI
                     </Col>
-                    <Col lg={2} md={2} className="col-progress-indicators">
-                      <NavItem>
-                        <NavLink
-                          to="#"
-                          id="pills-gen-info-tab"
-                          className={classnames(
-                            {
-                              active: activeTab === 5,
-                              done: activeTab <= 6 && activeTab > 4,
-                            },
-                            "rounded-pill"
-                          )}
-                          onClick={() => {
-                            toggleTab(5, 80);
-                          }}
-                          tag="button"
-                        >
-                          5
-                        </NavLink>
-                      </NavItem>
-                      Dossier visa
-                    </Col>
-                    <Col lg={2} md={2} className="col-progress-indicators">
-                      <NavItem>
-                        <NavLink
-                          to="#"
-                          id="pills-gen-info-tab"
-                          className={classnames(
-                            {
-                              active: activeTab === 6,
-                              done: activeTab <= 6 && activeTab > 5,
-                            },
-                            "rounded-pill"
-                          )}
-                          onClick={() => {
-                            toggleTab(6, 100);
-                          }}
-                          tag="button"
-                        >
-                          6
-                        </NavLink>
-                      </NavItem>
-                      PostVisa
-                    </Col>
+                    
+                    
                   </Nav>
                 </div>
               </Col>
               <Col lg={10}>
                 <Card>
                   <CardHeader>
-                    <h4>Suivi de votre dossier d’admission</h4>
+                    <h4>Suivi de votre  dossier de  caution bancaire</h4>
                   </CardHeader>
                   <CardBody className="card-body-suivi">
                     <Form action="#" className="form-steps">
@@ -239,7 +197,7 @@ const SuiviCautionBancaire = () => {
                                         <td>Saisie demande d'admission</td>
                                         <td>
                                           <span className="badge badge-md bg-warning">
-                                            <i className="mdi mdi-check-circle"></i> Terminé
+                                            <i className="mdi mdi-check-circle"></i> Encours
                                           </span>
                                         </td>
                                         <td>Aucun</td>
@@ -286,26 +244,77 @@ const SuiviCautionBancaire = () => {
                                     </thead>
                                     <tbody>
                                       <tr>
-                                        <td>1</td>
-                                        <td>Paiement</td>
+                                    <td>1</td>
+                                        <td>Copie de votre passeport</td>
 
                                         <td>
                                           <span className="badge badge-md bg-warning">
-                                            <i className="mdi mdi-check-circle"></i> En cours
+                                            <i className="mdi mdi-check-circle"></i> Encours
                                           </span>
                                         </td>
-
+                                        
                                         <td>01-12-2021 17:17</td>
-                                        <td>Letudient etranger</td>
+                                        <td>NDONGO MARLISE</td>
                                         <td>
-                                          <button type="button" className="btn btn-md btn-warning">
-                                            <i className="mdi mdi-check-circle"></i> Soumettre
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-check-circle"></i> Voir
                                           </button>
-                                          <button type="button" className="btn btn-md btn-info">
-                                            <i className="mdi mdi-pencil"></i> Modifier
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-pencil"></i> Télécharger
+                                          </button>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-cloud"></i> Upload
                                           </button>
                                         </td>
-                                      </tr>
+                                        </tr>
+                                        <tr>
+                                    <td>2</td>
+                                        <td>Copie d’attestation d’inscription ou lettre d’admission</td>
+
+                                        <td>
+                                          <span className="badge badge-md bg-warning">
+                                            <i className="mdi mdi-check-circle"></i> Encours
+                                          </span>
+                                        </td>
+                                        
+                                        <td>01-12-2021 17:17</td>
+                                        <td>NDONGO MARLISE</td>
+                                        <td>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-check-circle"></i> Voir
+                                          </button>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-pencil"></i> Télécharger
+                                          </button>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-cloud"></i> Upload
+                                          </button>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                    <td>3</td>
+                                        <td>Copie  plan de localisation</td>
+
+                                        <td>
+                                          <span className="badge badge-md bg-warning">
+                                            <i className="mdi mdi-check-circle"></i> Encours
+                                          </span>
+                                        </td>
+                                        
+                                        <td>01-12-2021 17:17</td>
+                                        <td>NDONGO MARLISE</td>
+                                        <td>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-check-circle"></i> Voir
+                                          </button>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-pencil"></i> Télécharger
+                                          </button>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-cloud"></i> Upload
+                                          </button>
+                                        </td>
+                                        </tr>
                                     </tbody>
                                   </Table>
                                 </div>
@@ -343,7 +352,7 @@ const SuiviCautionBancaire = () => {
                                     <tbody>
                                       <tr>
                                         <td>1</td>
-                                        <td>Saisie demande accompagnement</td>
+                                        <td>Saisie demande d’AVI</td>
                                         <td>Aucun</td>
                                         <td>
                                           <span className="badge badge-md prive-bg-primary">
@@ -401,7 +410,83 @@ const SuiviCautionBancaire = () => {
                                         </th>
                                       </tr>
                                     </thead>
-                                    <tbody></tbody>
+                                    <tbody>
+                                     <tr>
+                                      <td>1</td>
+                                        <td>Copie de votre passeport </td>
+
+                                        <td>
+                                          <span className="badge badge-md prive-bg-primary">
+                                            <i className="mdi mdi-check-circle"></i> Vérifié
+                                          </span>
+                                        </td>
+
+                                        <td>01-12-2021 17:17</td>
+                                        <td>NDONGO MARLISE</td>
+                                        <td>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-check-circle"></i> Voir
+                                          </button>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-pencil"></i> Télécharger
+                                          </button>
+                                          
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-cloud"></i> Upload
+                                          </button>
+                                        
+                                        </td>
+                                        </tr>
+                                          <tr>
+                                        <td>2</td>
+                                        <td>Copie d’attestation d’inscription ou lettre d’admission</td>
+
+                                        <td>
+                                          <span className="badge badge-md prive-bg-primary">
+                                            <i className="mdi mdi-check-circle"></i> Vérifié
+                                          </span>
+                                        </td>
+
+                                        <td>01-12-2021 17:17</td>
+                                        <td>NDONGO MARLISE</td>
+                                        <td>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-check-circle"></i> Voir
+                                          </button>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-pencil"></i> Télécharger
+                                          </button>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-cloud"></i> Upload
+                                          </button>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                        <td>3</td>
+                                        <td>Copie  plan de localisation</td>
+
+                                        <td>
+                                          <span className="badge badge-md prive-bg-primary">
+                                            <i className="mdi mdi-check-circle"></i> Vérifié
+                                          </span>
+                                        </td>
+
+                                        <td>01-12-2021 17:17</td>
+                                        <td>NDONGO MARLISE</td>
+                                        <td>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-check-circle"></i> Voir
+                                          </button>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-pencil"></i> Télécharger
+                                          </button>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-cloud"></i> Upload
+                                          </button>
+                                        </td>
+                                        </tr>
+                                  
+                                    </tbody>
                                   </Table>
                                 </div>
                               </Col>
@@ -413,7 +498,7 @@ const SuiviCautionBancaire = () => {
                           <div className="mb-4">
                             <div>
                               <h5 className="mb-1">
-                                Etape: <span className="table-title"> Signature Contrat</span>{" "}
+                                Etape: <span className="table-title">Joindre le RIB</span>{" "}
                               </h5>
                             </div>
                           </div>
@@ -436,9 +521,26 @@ const SuiviCautionBancaire = () => {
                                       </tr>
                                     </thead>
                                     <tbody>
-                                      <tr>
+                                    <tr>
                                         <td>1</td>
-                                        <td>Saisie demande accompagnement</td>
+                                        <td>Joindre le RIB</td>
+                                        <td>Aucun</td>
+                                        <td>
+                                        <span className="badge badge-md bg-warning">
+                                            <i className="mdi mdi-check-circle"></i> Encours
+                                          </span>
+                                        </td>
+
+                                        <td>01-12-2021 17:17</td>
+                                        <td>
+                                          <button type="button" className="btn btn-md btn-info">
+                                            <i className="mdi mdi-eye"></i> Joindre
+                                          </button>
+                                        </td>
+                                      </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Confirmation prise de rdv</td>
                                         <td>Aucun</td>
                                         <td>
                                           <span className="badge badge-md prive-bg-primary">
@@ -454,8 +556,8 @@ const SuiviCautionBancaire = () => {
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td>2</td>
-                                        <td>Notification prise rdv entretien</td>
+                                        <td>3</td>
+                                        <td>Génération procédure dépôt de fonds banque</td>
                                         <td>Aucun</td>
                                         <td>
                                           <span className="badge badge-md prive-bg-primary">
@@ -467,25 +569,21 @@ const SuiviCautionBancaire = () => {
                                         <td></td>
                                       </tr>
                                       <tr>
-                                        <td>3</td>
-                                        <td>Upload signature du contrat d’AVI signé</td>
+                                        <td>4</td>
+                                        <td>Notification  envoi du rib banque</td>
                                         <td>Aucun</td>
                                         <td>
-                                          <span className="badge badge-md bg-warning">
-                                            <i className="mdi mdi-check-circle"></i> Encours
+                                          <span className="badge badge-md prive-bg-primary">
+                                            <i className="mdi mdi-check-circle"></i> Terminé
                                           </span>
                                         </td>
 
                                         <td>01-12-2021 17:17</td>
-                                        <td>
-                                          <button type="button" className="btn btn-md prive-btn-primary">
-                                            <i className="mdi mdi-cloud"></i> Upload
-                                          </button>
-                                        </td>
+                                        <td></td>
                                       </tr>
                                       <tr>
-                                        <td>4</td>
-                                        <td>Validation de la signature du contrat</td>
+                                        <td>5</td>
+                                        <td>Validation envoi du RIB</td>
                                         <td>Aucun</td>
                                         <td>
                                           <span className="badge badge-md bg-warning">
@@ -527,13 +625,13 @@ const SuiviCautionBancaire = () => {
                                       </tr>
                                     </thead>
                                     <tbody>
-                                      <tr>
-                                        <td>1</td>
-                                        <td>Préparation du contrat d'accompagnement</td>
+                                    <tr>
+                                      <td>1</td>
+                                        <td>Copie de votre passeport </td>
 
                                         <td>
                                           <span className="badge badge-md prive-bg-primary">
-                                            <i className="mdi mdi-check-circle"></i> Généré
+                                            <i className="mdi mdi-check-circle"></i> Vérifié
                                           </span>
                                         </td>
 
@@ -546,15 +644,20 @@ const SuiviCautionBancaire = () => {
                                           <button type="button" className="btn btn-md prive-btn-primary-transparent">
                                             <i className="mdi mdi-pencil"></i> Télécharger
                                           </button>
+                                          
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-cloud"></i> Upload
+                                          </button>
+                                        
                                         </td>
-                                      </tr>
-                                      <tr>
+                                        </tr>
+                                          <tr>
                                         <td>2</td>
-                                        <td>Contrat signé</td>
+                                        <td>Copie d’attestation d’inscription ou lettre d’admission</td>
 
                                         <td>
-                                          <span className="badge badge-md bg-warning">
-                                            <i className="mdi mdi-check-circle"></i> Encours
+                                          <span className="badge badge-md prive-bg-primary">
+                                            <i className="mdi mdi-check-circle"></i> Vérifié
                                           </span>
                                         </td>
 
@@ -570,6 +673,52 @@ const SuiviCautionBancaire = () => {
                                           <button type="button" className="btn btn-md prive-btn-primary-transparent">
                                             <i className="mdi mdi-cloud"></i> Upload
                                           </button>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                        <td>3</td>
+                                        <td>Copie  plan de localisation</td>
+
+                                        <td>
+                                          <span className="badge badge-md prive-bg-primary">
+                                            <i className="mdi mdi-check-circle"></i> Vérifié
+                                          </span>
+                                        </td>
+
+                                        <td>01-12-2021 17:17</td>
+                                        <td>NDONGO MARLISE</td>
+                                        <td>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-check-circle"></i> Voir
+                                          </button>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-pencil"></i> Télécharger
+                                          </button>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-cloud"></i> Upload
+                                          </button>
+                                        </td>
+                                        </tr>
+                                      <tr>
+                                        <td>4</td>
+                                        <td>Contrat signé</td>
+
+                                        <td>
+                                        <span className="badge badge-md prive-bg-primary">
+                                            <i className="mdi mdi-check-circle"></i> Généré
+                                          </span>
+                                        </td>
+
+                                        <td>01-12-2021 17:17</td>
+                                        <td>NDONGO MARLISE</td>
+                                        <td>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-check-circle"></i> Voir
+                                          </button>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-pencil"></i> Télécharger
+                                          </button>
+                                         
                                         </td>
                                       </tr>
                                     </tbody>
@@ -583,7 +732,7 @@ const SuiviCautionBancaire = () => {
                           <div className="mb-4">
                             <div>
                               <h5 className="mb-1">
-                                Etape: <span className="table-title"> Paiement des frais d’accompagnement</span>{" "}
+                                Etape: <span className="table-title">Joindre l’AVI</span>{" "}
                               </h5>
                             </div>
                           </div>
@@ -606,77 +755,37 @@ const SuiviCautionBancaire = () => {
                                       </tr>
                                     </thead>
                                     <tbody>
-                                      <tr>
+                                    <tr>
                                         <td>1</td>
-                                        <td>Paiement des frais d'accompagnement</td>
+                                        <td>Joindre  Votre AVI</td>
                                         <td>Aucun</td>
                                         <td>
-                                          <span className="badge badge-md bg-warning">
+                                        <span className="badge badge-md bg-warning">
                                             <i className="mdi mdi-check-circle"></i> Encours
                                           </span>
                                         </td>
 
                                         <td>01-12-2021 17:17</td>
                                         <td>
-                                          <button type="button" className="btn btn-md prive-btn-primary">
-                                            <i className="mdi mdi-cloud"></i> Upload
-                                          </button>
                                           <button type="button" className="btn btn-md btn-info">
-                                            <i className="mdi mdi-pencil"></i> Signé
+                                            <i className="mdi mdi-eye"></i> Joindre
                                           </button>
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td>2</td>
-                                        <td>Notification prise rdv entretien</td>
+                                        <td>1</td>
+                                        <td>Validation de l’envoi de votre AVI</td>
                                         <td>Aucun</td>
                                         <td>
-                                          <span className="badge badge-md prive-bg-primary">
-                                            <i className="mdi mdi-check-circle"></i> Terminé
+                                        <span className="badge badge-md bg-warning">
+                                            <i className="mdi mdi-check-circle"></i> Encours
                                           </span>
                                         </td>
 
                                         <td>01-12-2021 17:17</td>
-                                        <td></td>
-                                      </tr>
-                                      <tr>
-                                        <td>3</td>
-                                        <td>Upload signature du contrat d’AVI signé</td>
-                                        <td>Aucun</td>
                                         <td>
-                                          <span className="badge badge-md prive-bg-primary">
-                                            <i className="mdi mdi-check-circle"></i> Terminé
-                                          </span>
+                                          
                                         </td>
-
-                                        <td>01-12-2021 17:17</td>
-                                        <td></td>
-                                      </tr>
-                                      <tr>
-                                        <td>4</td>
-                                        <td>Validation de la signature du contrat</td>
-                                        <td>Aucun</td>
-                                        <td>
-                                          <span className="badge badge-md prive-bg-primary">
-                                            <i className="mdi mdi-check-circle"></i> Terminé
-                                          </span>
-                                        </td>
-
-                                        <td>01-12-2021 17:17</td>
-                                        <td></td>
-                                      </tr>
-                                      <tr>
-                                        <td>5</td>
-                                        <td>Notification paiement accompagnement</td>
-                                        <td>Aucun</td>
-                                        <td>
-                                          <span className="badge badge-md prive-bg-primary">
-                                            <i className="mdi mdi-check-circle"></i> Terminé
-                                          </span>
-                                        </td>
-
-                                        <td>01-12-2021 17:17</td>
-                                        <td></td>
                                       </tr>
                                     </tbody>
                                   </Table>
@@ -709,13 +818,13 @@ const SuiviCautionBancaire = () => {
                                       </tr>
                                     </thead>
                                     <tbody>
-                                      <tr>
-                                        <td>1</td>
-                                        <td>Préparation du contrat d'accompagnement</td>
+                                    <tr>
+                                      <td>1</td>
+                                        <td>Copie de votre passeport </td>
 
                                         <td>
                                           <span className="badge badge-md prive-bg-primary">
-                                            <i className="mdi mdi-check-circle"></i> Généré
+                                            <i className="mdi mdi-check-circle"></i> Vérifié
                                           </span>
                                         </td>
 
@@ -728,15 +837,20 @@ const SuiviCautionBancaire = () => {
                                           <button type="button" className="btn btn-md prive-btn-primary-transparent">
                                             <i className="mdi mdi-pencil"></i> Télécharger
                                           </button>
+                                          
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-cloud"></i> Upload
+                                          </button>
+                                        
                                         </td>
-                                      </tr>
-                                      <tr>
+                                        </tr>
+                                          <tr>
                                         <td>2</td>
-                                        <td>Contrat signé</td>
+                                        <td>Copie d’attestation d’inscription ou lettre d’admission</td>
 
                                         <td>
                                           <span className="badge badge-md prive-bg-primary">
-                                            <i className="mdi mdi-check-circle"></i> Signé
+                                            <i className="mdi mdi-check-circle"></i> Vérifié
                                           </span>
                                         </td>
 
@@ -752,6 +866,105 @@ const SuiviCautionBancaire = () => {
                                           <button type="button" className="btn btn-md prive-btn-primary-transparent">
                                             <i className="mdi mdi-cloud"></i> Upload
                                           </button>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                        <td>3</td>
+                                        <td>Copie  plan de localisation</td>
+
+                                        <td>
+                                          <span className="badge badge-md prive-bg-primary">
+                                            <i className="mdi mdi-check-circle"></i> Vérifié
+                                          </span>
+                                        </td>
+
+                                        <td>01-12-2021 17:17</td>
+                                        <td>NDONGO MARLISE</td>
+                                        <td>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-check-circle"></i> Voir
+                                          </button>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-pencil"></i> Télécharger
+                                          </button>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-cloud"></i> Upload
+                                          </button>
+                                        </td>
+                                        </tr>
+                                      <tr>
+                                        <td>4</td>
+                                        <td>Génération procédure dépôt de fonds banque</td>
+
+                                        <td>
+                                        <span className="badge badge-md prive-bg-primary">
+                                            <i className="mdi mdi-check-circle"></i> Vérifié
+                                          </span>
+                                        </td>
+
+                                        <td>01-12-2021 17:17</td>
+                                        <td>NDONGO MARLISE</td>
+                                        <td>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-check-circle"></i> Voir
+                                          </button>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-pencil"></i> Télécharger
+                                          </button>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-cloud"></i> Upload
+                                          </button>
+                                         
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>5</td>
+                                        <td>RIB banque UBA</td>
+
+                                        <td>
+                                        <span className="badge badge-md prive-bg-primary">
+                                            <i className="mdi mdi-check-circle"></i> Vérifié
+                                          </span>
+                                        </td>
+
+                                        <td>01-12-2021 17:17</td>
+                                        <td>NDONGO MARLISE</td>
+                                        <td>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-check-circle"></i> Voir
+                                          </button>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-pencil"></i> Télécharger
+                                          </button>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-cloud"></i> Upload
+                                          </button>
+                                         
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>6</td>
+                                        <td>AVI  UBA</td>
+
+                                        <td>
+                                        <span className="badge badge-md bg-warning">
+                                            <i className="mdi mdi-check-circle"></i> Encours
+                                          </span>
+                                        </td>
+
+                                        <td>01-12-2021 17:17</td>
+                                        <td>NDONGO MARLISE</td>
+                                        <td>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-check-circle"></i> Voir
+                                          </button>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-pencil"></i> Télécharger
+                                          </button>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-cloud"></i> Upload
+                                          </button>
+                                         
                                         </td>
                                       </tr>
                                     </tbody>

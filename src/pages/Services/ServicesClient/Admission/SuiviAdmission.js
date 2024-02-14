@@ -72,7 +72,7 @@ const SuiviAdmission = () => {
                           className={classnames(
                             {
                               active: activeTab === 1,
-                              done: activeTab <= 6 && activeTab >= 0,
+                              done: activeTab <= 5 && activeTab >= 0,
                             },
                             "rounded-pill"
                           )}
@@ -84,7 +84,7 @@ const SuiviAdmission = () => {
                           1<Progress value={progressbarvalue} style={{ height: "2px" }} />
                         </NavLink>
                       </NavItem>
-                      Paiement service
+                      Formulaire Demande 
                     </Col>
                     <Col lg={2} md={2} className="col-progress-indicators">
                       <NavItem>
@@ -128,7 +128,7 @@ const SuiviAdmission = () => {
                           3
                         </NavLink>
                       </NavItem>
-                      Signature Contrat
+                      Dossier  candidature
                     </Col>
                     <Col lg={2} md={2} className="col-progress-indicators">
                       <NavItem>
@@ -150,7 +150,7 @@ const SuiviAdmission = () => {
                           4
                         </NavLink>
                       </NavItem>
-                      Paiement
+                      Envoi dossier candidature
                     </Col>
                     <Col lg={2} md={2} className="col-progress-indicators">
                       <NavItem>
@@ -172,30 +172,9 @@ const SuiviAdmission = () => {
                           5
                         </NavLink>
                       </NavItem>
-                      Dossier visa
+                      Décision admission
                     </Col>
-                    <Col lg={2} md={2} className="col-progress-indicators">
-                      <NavItem>
-                        <NavLink
-                          to="#"
-                          id="pills-gen-info-tab"
-                          className={classnames(
-                            {
-                              active: activeTab === 6,
-                              done: activeTab <= 6 && activeTab > 5,
-                            },
-                            "rounded-pill"
-                          )}
-                          onClick={() => {
-                            toggleTab(6, 100);
-                          }}
-                          tag="button"
-                        >
-                          6
-                        </NavLink>
-                      </NavItem>
-                      PostVisa
-                    </Col>
+                    
                   </Nav>
                 </div>
               </Col>
@@ -236,7 +215,7 @@ const SuiviAdmission = () => {
                                     <tbody>
                                       <tr>
                                         <td>1</td>
-                                        <td>Saisie demande d'admission</td>
+                                        <td>Saisie demande admission</td>
                                         <td>
                                           <span className="badge badge-md bg-warning">
                                             <i className="mdi mdi-check-circle"></i> Terminé
@@ -343,7 +322,7 @@ const SuiviAdmission = () => {
                                     <tbody>
                                       <tr>
                                         <td>1</td>
-                                        <td>Saisie demande accompagnement</td>
+                                        <td>Saisie demande admission</td>
                                         <td>Aucun</td>
                                         <td>
                                           <span className="badge badge-md prive-bg-primary">
@@ -413,7 +392,7 @@ const SuiviAdmission = () => {
                           <div className="mb-4">
                             <div>
                               <h5 className="mb-1">
-                                Etape: <span className="table-title"> Signature Contrat</span>{" "}
+                                Etape: <span className="table-title"> Dossier candidature</span>{" "}
                               </h5>
                             </div>
                           </div>
@@ -436,39 +415,11 @@ const SuiviAdmission = () => {
                                       </tr>
                                     </thead>
                                     <tbody>
+                                      
+                                      
                                       <tr>
                                         <td>1</td>
-                                        <td>Saisie demande accompagnement</td>
-                                        <td>Aucun</td>
-                                        <td>
-                                          <span className="badge badge-md prive-bg-primary">
-                                            <i className="mdi mdi-check-circle"></i> Terminé
-                                          </span>
-                                        </td>
-
-                                        <td>01-12-2021 17:17</td>
-                                        <td>
-                                          <button type="button" className="btn btn-md btn-info">
-                                            <i className="mdi mdi-eye"></i> Consulter
-                                          </button>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>2</td>
-                                        <td>Notification prise rdv entretien</td>
-                                        <td>Aucun</td>
-                                        <td>
-                                          <span className="badge badge-md prive-bg-primary">
-                                            <i className="mdi mdi-check-circle"></i> Terminé
-                                          </span>
-                                        </td>
-
-                                        <td>01-12-2021 17:17</td>
-                                        <td></td>
-                                      </tr>
-                                      <tr>
-                                        <td>3</td>
-                                        <td>Upload signature du contrat d’AVI signé</td>
+                                        <td>Joindre les documents  de la candidature</td>
                                         <td>Aucun</td>
                                         <td>
                                           <span className="badge badge-md bg-warning">
@@ -478,24 +429,12 @@ const SuiviAdmission = () => {
 
                                         <td>01-12-2021 17:17</td>
                                         <td>
-                                          <button type="button" className="btn btn-md prive-btn-primary">
-                                            <i className="mdi mdi-cloud"></i> Upload
-                                          </button>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>4</td>
-                                        <td>Validation de la signature du contrat</td>
-                                        <td>Aucun</td>
-                                        <td>
-                                          <span className="badge badge-md bg-warning">
-                                            <i className="mdi mdi-check-circle"></i> Encours
+                                        <span className="badge badge-md prive-bg-primary">
+                                            <i className="mdi mdi-check-circle"></i> Je candidate
                                           </span>
                                         </td>
-
-                                        <td>01-12-2021 17:17</td>
-                                        <td></td>
                                       </tr>
+                                     
                                     </tbody>
                                   </Table>
                                 </div>
@@ -527,51 +466,8 @@ const SuiviAdmission = () => {
                                       </tr>
                                     </thead>
                                     <tbody>
-                                      <tr>
-                                        <td>1</td>
-                                        <td>Préparation du contrat d'accompagnement</td>
-
-                                        <td>
-                                          <span className="badge badge-md prive-bg-primary">
-                                            <i className="mdi mdi-check-circle"></i> Généré
-                                          </span>
-                                        </td>
-
-                                        <td>01-12-2021 17:17</td>
-                                        <td>NDONGO MARLISE</td>
-                                        <td>
-                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
-                                            <i className="mdi mdi-check-circle"></i> Voir
-                                          </button>
-                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
-                                            <i className="mdi mdi-pencil"></i> Télécharger
-                                          </button>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>2</td>
-                                        <td>Contrat signé</td>
-
-                                        <td>
-                                          <span className="badge badge-md bg-warning">
-                                            <i className="mdi mdi-check-circle"></i> Encours
-                                          </span>
-                                        </td>
-
-                                        <td>01-12-2021 17:17</td>
-                                        <td>NDONGO MARLISE</td>
-                                        <td>
-                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
-                                            <i className="mdi mdi-check-circle"></i> Voir
-                                          </button>
-                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
-                                            <i className="mdi mdi-pencil"></i> Télécharger
-                                          </button>
-                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
-                                            <i className="mdi mdi-cloud"></i> Upload
-                                          </button>
-                                        </td>
-                                      </tr>
+                                     
+                                     
                                     </tbody>
                                   </Table>
                                 </div>
@@ -583,7 +479,7 @@ const SuiviAdmission = () => {
                           <div className="mb-4">
                             <div>
                               <h5 className="mb-1">
-                                Etape: <span className="table-title"> Paiement des frais d’accompagnement</span>{" "}
+                                Etape: <span className="table-title"> Dossier candidature</span>{" "}
                               </h5>
                             </div>
                           </div>
@@ -608,7 +504,7 @@ const SuiviAdmission = () => {
                                     <tbody>
                                       <tr>
                                         <td>1</td>
-                                        <td>Paiement des frais d'accompagnement</td>
+                                        <td>Joindre les documents  de la candidature</td>
                                         <td>Aucun</td>
                                         <td>
                                           <span className="badge badge-md bg-warning">
@@ -618,17 +514,14 @@ const SuiviAdmission = () => {
 
                                         <td>01-12-2021 17:17</td>
                                         <td>
-                                          <button type="button" className="btn btn-md prive-btn-primary">
-                                            <i className="mdi mdi-cloud"></i> Upload
-                                          </button>
-                                          <button type="button" className="btn btn-md btn-info">
-                                            <i className="mdi mdi-pencil"></i> Signé
+                                        <button type="button" className="btn btn-md btn-info">
+                                            <i className="mdi mdi-eye"></i> Consulter
                                           </button>
                                         </td>
                                       </tr>
                                       <tr>
                                         <td>2</td>
-                                        <td>Notification prise rdv entretien</td>
+                                        <td>Validation des documents envoyés</td>
                                         <td>Aucun</td>
                                         <td>
                                           <span className="badge badge-md prive-bg-primary">
@@ -641,7 +534,7 @@ const SuiviAdmission = () => {
                                       </tr>
                                       <tr>
                                         <td>3</td>
-                                        <td>Upload signature du contrat d’AVI signé</td>
+                                        <td>Notification  prise en compte des documents envoyés</td>
                                         <td>Aucun</td>
                                         <td>
                                           <span className="badge badge-md prive-bg-primary">
@@ -652,32 +545,7 @@ const SuiviAdmission = () => {
                                         <td>01-12-2021 17:17</td>
                                         <td></td>
                                       </tr>
-                                      <tr>
-                                        <td>4</td>
-                                        <td>Validation de la signature du contrat</td>
-                                        <td>Aucun</td>
-                                        <td>
-                                          <span className="badge badge-md prive-bg-primary">
-                                            <i className="mdi mdi-check-circle"></i> Terminé
-                                          </span>
-                                        </td>
-
-                                        <td>01-12-2021 17:17</td>
-                                        <td></td>
-                                      </tr>
-                                      <tr>
-                                        <td>5</td>
-                                        <td>Notification paiement accompagnement</td>
-                                        <td>Aucun</td>
-                                        <td>
-                                          <span className="badge badge-md prive-bg-primary">
-                                            <i className="mdi mdi-check-circle"></i> Terminé
-                                          </span>
-                                        </td>
-
-                                        <td>01-12-2021 17:17</td>
-                                        <td></td>
-                                      </tr>
+                                    
                                     </tbody>
                                   </Table>
                                 </div>
@@ -709,13 +577,14 @@ const SuiviAdmission = () => {
                                       </tr>
                                     </thead>
                                     <tbody>
+                                      
                                       <tr>
                                         <td>1</td>
-                                        <td>Préparation du contrat d'accompagnement</td>
+                                        <td>Photo 4X4 D4IDENTIT2</td>
 
                                         <td>
                                           <span className="badge badge-md prive-bg-primary">
-                                            <i className="mdi mdi-check-circle"></i> Généré
+                                            <i className="mdi mdi-check-circle"></i> Terminé
                                           </span>
                                         </td>
 
@@ -728,15 +597,18 @@ const SuiviAdmission = () => {
                                           <button type="button" className="btn btn-md prive-btn-primary-transparent">
                                             <i className="mdi mdi-pencil"></i> Télécharger
                                           </button>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-cloud"></i> Upload
+                                          </button>
                                         </td>
                                       </tr>
                                       <tr>
                                         <td>2</td>
-                                        <td>Contrat signé</td>
+                                        <td>Copie de votre passeport  </td>
 
                                         <td>
                                           <span className="badge badge-md prive-bg-primary">
-                                            <i className="mdi mdi-check-circle"></i> Signé
+                                            <i className="mdi mdi-check-circle"></i> Terminé
                                           </span>
                                         </td>
 
@@ -765,7 +637,7 @@ const SuiviAdmission = () => {
                           <div className="mb-4">
                             <div>
                               <h5 className="mb-1">
-                                Etape: <span className="table-title"> Dossier visa</span>{" "}
+                                Etape: <span className="table-title"> DECISION ADMISSION</span>{" "}
                               </h5>
                             </div>
                           </div>
@@ -788,78 +660,27 @@ const SuiviAdmission = () => {
                                       </tr>
                                     </thead>
                                     <tbody>
+                                     
                                       <tr>
                                         <td>1</td>
-                                        <td>Paiement des frais d'accompagnement</td>
+                                        <td>Décision admission</td>
                                         <td>Aucun</td>
                                         <td>
-                                          <span className="badge badge-md bg-warning">
+                                        <span className="badge badge-md bg-warning">
                                             <i className="mdi mdi-check-circle"></i> Encours
                                           </span>
                                         </td>
 
                                         <td>01-12-2021 17:17</td>
                                         <td>
-                                          <button type="button" className="btn btn-md prive-btn-primary">
-                                            <i className="mdi mdi-cloud"></i> Upload
-                                          </button>
-                                          <button type="button" className="btn btn-md btn-info">
-                                            <i className="mdi mdi-pencil"></i> Signé
-                                          </button>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>2</td>
-                                        <td>Notification prise rdv entretien</td>
-                                        <td>Aucun</td>
-                                        <td>
-                                          <span className="badge badge-md prive-bg-primary">
-                                            <i className="mdi mdi-check-circle"></i> Terminé
+                                        <span className="badge badge-md prive-bg-primary">
+                                            <i className="mdi mdi-check-circle"></i> Décision admission
                                           </span>
                                         </td>
-
-                                        <td>01-12-2021 17:17</td>
-                                        <td></td>
                                       </tr>
-                                      <tr>
-                                        <td>3</td>
-                                        <td>Upload signature du contrat d’AVI signé</td>
-                                        <td>Aucun</td>
-                                        <td>
-                                          <span className="badge badge-md prive-bg-primary">
-                                            <i className="mdi mdi-check-circle"></i> Terminé
-                                          </span>
-                                        </td>
-
-                                        <td>01-12-2021 17:17</td>
-                                        <td></td>
-                                      </tr>
-                                      <tr>
-                                        <td>4</td>
-                                        <td>Validation de la signature du contrat</td>
-                                        <td>Aucun</td>
-                                        <td>
-                                          <span className="badge badge-md prive-bg-primary">
-                                            <i className="mdi mdi-check-circle"></i> Terminé
-                                          </span>
-                                        </td>
-
-                                        <td>01-12-2021 17:17</td>
-                                        <td></td>
-                                      </tr>
-                                      <tr>
-                                        <td>5</td>
-                                        <td>Notification paiement accompagnement</td>
-                                        <td>Aucun</td>
-                                        <td>
-                                          <span className="badge badge-md prive-bg-primary">
-                                            <i className="mdi mdi-check-circle"></i> Terminé
-                                          </span>
-                                        </td>
-
-                                        <td>01-12-2021 17:17</td>
-                                        <td></td>
-                                      </tr>
+                                     
+                                     
+                                      
                                     </tbody>
                                   </Table>
                                 </div>
