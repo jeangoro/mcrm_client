@@ -49,6 +49,8 @@ const SuiviAdmission = () => {
     setprogressbarvalue(value);
   }
 
+const [openModal, setOpenModal ] = useState(false);
+
   return (
     <>
       <div className="page-content">
@@ -57,7 +59,7 @@ const SuiviAdmission = () => {
             <BreadCrumbCustom pages={pages} />
           </div>
 
-          <div className="my-content">
+          <div className="my-content2">
             <Row>
               <Col lg={2} className="my-nav-progress-bar">
                 <div className="progress-nav mb-4">
@@ -143,7 +145,7 @@ const SuiviAdmission = () => {
                             "rounded-pill"
                           )}
                           onClick={() => {
-                            toggleTab(4, 60);
+                            toggleTab(4, 70);
                           }}
                           tag="button"
                         >
@@ -165,7 +167,7 @@ const SuiviAdmission = () => {
                             "rounded-pill"
                           )}
                           onClick={() => {
-                            toggleTab(5, 80);
+                            toggleTab(5, 120);
                           }}
                           tag="button"
                         >
@@ -194,7 +196,7 @@ const SuiviAdmission = () => {
                               </h5>
                             </div>
                           </div>
-                          <ConsultationFormAdmission />
+                          <ConsultationFormAdmission openModal={openModal} setOpenModal={setOpenModal} />
                           <Container fluid>
                             <Row>
                               <Col xl={12}>
@@ -228,7 +230,7 @@ const SuiviAdmission = () => {
                                           <button type="button" className="btn btn-md btn-warning">
                                             <i className="mdi mdi-check-circle"></i> Soumettre
                                           </button>
-                                          <button type="button" className="btn btn-md btn-info">
+                                          <button type="button" className="btn btn-md btn-info" onClick={()=>{setOpenModal(true)}}>
                                             <i className="mdi mdi-pencil"></i> Modifier
                                           </button>
                                         </td>

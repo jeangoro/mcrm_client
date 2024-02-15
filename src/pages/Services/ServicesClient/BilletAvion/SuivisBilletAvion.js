@@ -15,7 +15,7 @@ const SuiviBilletAvion = () => {
   const pages = [
     { title: "Accueil", link: "/dashboard" },
     { title: "Services", link: "/services-clients" },
-    { title: "Accompagnement", link: "" },
+    { title: "ACHAT BILLET D’AVION", link: "" },
   ];
 
   const [activeTab, setactiveTab] = useState(1);
@@ -61,7 +61,7 @@ const SuiviBilletAvion = () => {
             <BreadCrumbCustom pages={pages} />
           </div>
 
-          <div className="my-content">
+          <div className="my-content3">
             <Row>
               <Col lg={2} className="my-nav-progress-bar">
                 <div className="progress-nav mb-4">
@@ -88,7 +88,7 @@ const SuiviBilletAvion = () => {
                           1<Progress value={progressbarvalue} />
                         </NavLink>
                       </NavItem>
-                      Paiement service
+                      Formulaire de demande
                     </Col>
                     <Col lg={2} md={2} className="col-progress-indicators">
                       <NavItem>
@@ -103,14 +103,14 @@ const SuiviBilletAvion = () => {
                             "rounded-pill"
                           )}
                           onClick={() => {
-                            toggleTab(2, 20);
+                            toggleTab(2, 30);
                           }}
                           tag="button"
                         >
                           2
                         </NavLink>
                       </NavItem>
-                      Pré-entretien
+                      Entretien 
                     </Col>
                     <Col lg={2} md={2} className="col-progress-indicators">
                       <NavItem>
@@ -125,14 +125,14 @@ const SuiviBilletAvion = () => {
                             "rounded-pill"
                           )}
                           onClick={() => {
-                            toggleTab(3, 40);
+                            toggleTab(3, 60);
                           }}
                           tag="button"
                         >
                           3
                         </NavLink>
                       </NavItem>
-                      Signature Contrat
+                      Réservation billet
                     </Col>
                     <Col lg={2} md={2} className="col-progress-indicators">
                       <NavItem>
@@ -147,66 +147,24 @@ const SuiviBilletAvion = () => {
                             "rounded-pill"
                           )}
                           onClick={() => {
-                            toggleTab(4, 60);
+                            toggleTab(4, 100);
                           }}
                           tag="button"
                         >
                           4
                         </NavLink>
                       </NavItem>
-                      Paiement
+                      Achat billet
                     </Col>
-                    <Col lg={2} md={2} className="col-progress-indicators">
-                      <NavItem>
-                        <NavLink
-                          to="#"
-                          id="pills-gen-info-tab"
-                          className={classnames(
-                            {
-                              active: activeTab === 5,
-                              done: activeTab <= 6 && activeTab > 4,
-                            },
-                            "rounded-pill"
-                          )}
-                          onClick={() => {
-                            toggleTab(5, 80);
-                          }}
-                          tag="button"
-                        >
-                          5
-                        </NavLink>
-                      </NavItem>
-                      Dossier visa
-                    </Col>
-                    <Col lg={2} md={2} className="col-progress-indicators">
-                      <NavItem>
-                        <NavLink
-                          to="#"
-                          id="pills-gen-info-tab"
-                          className={classnames(
-                            {
-                              active: activeTab === 6,
-                              done: activeTab <= 6 && activeTab > 5,
-                            },
-                            "rounded-pill"
-                          )}
-                          onClick={() => {
-                            toggleTab(6, 100);
-                          }}
-                          tag="button"
-                        >
-                          6
-                        </NavLink>
-                      </NavItem>
-                      PostVisa
-                    </Col>
+                    
+                   
                   </Nav>
                 </div>
               </Col>
               <Col lg={10}>
                 <Card>
                   <CardHeader>
-                    <h4>Suivi de votre dossier d’accompagnement</h4>
+                    <h4>Suivi de votre  dossier d’achat de billet d’avion</h4>
                   </CardHeader>
                   <CardBody className="card-body-suivi">
                     <Form action="#" className="form-steps">
@@ -215,7 +173,7 @@ const SuiviBilletAvion = () => {
                           <div className="mb-4">
                             <div>
                               <h5 className="mb-1">
-                                Etape: <span className="table-title"> Formulaire demande</span>{" "}
+                                Etape: <span className="table-title">Formulaire demande</span>{" "}
                               </h5>
                             </div>
                           </div>
@@ -240,7 +198,7 @@ const SuiviBilletAvion = () => {
                                     <tbody>
                                       <tr>
                                         <td>1</td>
-                                        <td>Saisie demande accompagnement</td>
+                                        <td>Saisie demande réservation ou achat</td>
                                         <td>Aucun</td>
                                         <td>
                                           <span className="badge badge-md bg-warning">
@@ -289,77 +247,30 @@ const SuiviBilletAvion = () => {
                                       </tr>
                                     </thead>
                                     <tbody>
-                                      <tr>
+                                    <tr>
                                         <td>1</td>
-                                        <td>Paiement</td>
+                                        <td>Copie de votre passeport </td>
 
                                         <td>
                                           <span className="badge badge-md bg-warning">
-                                            <i className="mdi mdi-check-circle"></i> En cours
+                                            <i className="mdi mdi-check-circle"></i> Encours
                                           </span>
                                         </td>
 
                                         <td>01-12-2021 17:17</td>
-                                        <td>Letudient etranger</td>
+                                        <td>NDONGO MARLISE</td>
                                         <td>
-                                          <button type="button" className="btn btn-md btn-warning">
-                                            <i className="mdi mdi-check-circle"></i> Soumettre
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-check-circle"></i> Voir
                                           </button>
-                                          <button type="button" className="btn btn-md btn-info">
-                                            <i className="mdi mdi-pencil"></i> Modifier
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-pencil"></i> Télécharger
+                                          </button>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-cloud"></i> Upload
                                           </button>
                                         </td>
                                       </tr>
-                                      {documentsDataExample.map((document, key) => (
-                                        <tr key={key}>
-                                          <td>{key + 1}</td>
-                                          <td>{document.description}</td>
-
-                                          <td>
-                                            {document.documentStatus === "VERIFICATION_ENCOURS" ? (
-                                              <span className="badge badge-md bg-warning">
-                                                <i className="mdi mdi-check-circle"></i> Vérification Encours
-                                              </span>
-                                            ) : document.documentStatus === "VALIDE" ? (
-                                              <span className="badge badge-md bg-success">
-                                                <i className="mdi mdi-check-circle"></i> Validé
-                                              </span>
-                                            ) : (
-                                              <span className="badge badge-md bg-danger">
-                                                <i className="mdi mdi-check-circle"></i> Refusé
-                                              </span>
-                                            )}
-                                          </td>
-
-                                          <td>{document.lastModified}</td>
-                                          <td>{document.createdBy}</td>
-                                          <td>
-                                            {document.documentStatus === "VERIFICATION_ENCOURS" ? (
-                                              <span className="badge badge-md bg-warning">
-                                                <i className="mdi mdi-check-circle"></i> Vérification Encours
-                                              </span>
-                                            ) : document.documentStatus === "VALIDE" ? (
-                                              <>
-                                                <button type="button" className="btn btn-md btn-warning">
-                                                  <i className="mdi mdi-check-circle"></i> Télécharger
-                                                </button>
-                                                <button type="button" className="btn btn-md btn-info">
-                                                  <i className="mdi mdi-pencil"></i> Consulter
-                                                </button>
-                                              </>
-                                            ) : (
-                                              <>
-                                                <button type="button" className="btn btn-md btn-warning">
-                                                  <i className="mdi mdi-check-circle"></i> Upload
-                                                </button>
-                                                <button type="button" className="btn btn-md btn-info">
-                                                  <i className="mdi mdi-pencil"></i> Consulter
-                                                </button>
-                                              </>
-                                            )}
-                                          </td>
-                                        </tr>
-                                      ))}
                                     </tbody>
                                   </Table>
                                 </div>
@@ -455,7 +366,32 @@ const SuiviBilletAvion = () => {
                                         </th>
                                       </tr>
                                     </thead>
-                                    <tbody></tbody>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Copie de votre passeport </td>
+
+                                        <td>
+                                          <span className="badge badge-md bg-warning">
+                                            <i className="mdi mdi-check-circle"></i> Encours
+                                          </span>
+                                        </td>
+
+                                        <td>01-12-2021 17:17</td>
+                                        <td>NDONGO MARLISE</td>
+                                        <td>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-check-circle"></i> Voir
+                                          </button>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-pencil"></i> Télécharger
+                                          </button>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-cloud"></i> Upload
+                                          </button>
+                                        </td>
+                                      </tr>
+                                    </tbody>
                                   </Table>
                                 </div>
                               </Col>
@@ -467,7 +403,7 @@ const SuiviBilletAvion = () => {
                           <div className="mb-4">
                             <div>
                               <h5 className="mb-1">
-                                Etape: <span className="table-title"> Signature Contrat</span>{" "}
+                                Etape: <span className="table-title">Réservation billet</span>{" "}
                               </h5>
                             </div>
                           </div>
@@ -492,54 +428,7 @@ const SuiviBilletAvion = () => {
                                     <tbody>
                                       <tr>
                                         <td>1</td>
-                                        <td>Saisie demande accompagnement</td>
-                                        <td>Aucun</td>
-                                        <td>
-                                          <span className="badge badge-md prive-bg-primary">
-                                            <i className="mdi mdi-check-circle"></i> Terminé
-                                          </span>
-                                        </td>
-
-                                        <td>01-12-2021 17:17</td>
-                                        <td>
-                                          <button type="button" className="btn btn-md btn-info">
-                                            <i className="mdi mdi-eye"></i> Consulter
-                                          </button>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>2</td>
-                                        <td>Notification prise rdv entretien</td>
-                                        <td>Aucun</td>
-                                        <td>
-                                          <span className="badge badge-md prive-bg-primary">
-                                            <i className="mdi mdi-check-circle"></i> Terminé
-                                          </span>
-                                        </td>
-
-                                        <td>01-12-2021 17:17</td>
-                                        <td></td>
-                                      </tr>
-                                      <tr>
-                                        <td>3</td>
-                                        <td>Upload signature du contrat d’AVI signé</td>
-                                        <td>Aucun</td>
-                                        <td>
-                                          <span className="badge badge-md bg-warning">
-                                            <i className="mdi mdi-check-circle"></i> Encours
-                                          </span>
-                                        </td>
-
-                                        <td>01-12-2021 17:17</td>
-                                        <td>
-                                          <button type="button" className="btn btn-md prive-btn-primary">
-                                            <i className="mdi mdi-cloud"></i> Upload
-                                          </button>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>4</td>
-                                        <td>Validation de la signature du contrat</td>
+                                        <td>Envoi  document de la réservation du billet</td>
                                         <td>Aucun</td>
                                         <td>
                                           <span className="badge badge-md bg-warning">
@@ -587,28 +476,7 @@ const SuiviBilletAvion = () => {
 
                                         <td>
                                           <span className="badge badge-md prive-bg-primary">
-                                            <i className="mdi mdi-check-circle"></i> Généré
-                                          </span>
-                                        </td>
-
-                                        <td>01-12-2021 17:17</td>
-                                        <td>NDONGO MARLISE</td>
-                                        <td>
-                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
-                                            <i className="mdi mdi-check-circle"></i> Voir
-                                          </button>
-                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
-                                            <i className="mdi mdi-pencil"></i> Télécharger
-                                          </button>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>2</td>
-                                        <td>Contrat signé</td>
-
-                                        <td>
-                                          <span className="badge badge-md bg-warning">
-                                            <i className="mdi mdi-check-circle"></i> Encours
+                                            <i className="mdi mdi-check-circle"></i> Terminé
                                           </span>
                                         </td>
 
@@ -626,6 +494,7 @@ const SuiviBilletAvion = () => {
                                           </button>
                                         </td>
                                       </tr>
+                                     
                                     </tbody>
                                   </Table>
                                 </div>
@@ -637,7 +506,7 @@ const SuiviBilletAvion = () => {
                           <div className="mb-4">
                             <div>
                               <h5 className="mb-1">
-                                Etape: <span className="table-title"> Paiement des frais d’accompagnement</span>{" "}
+                                Etape: <span className="table-title">Achat billet</span>{" "}
                               </h5>
                             </div>
                           </div>
@@ -662,7 +531,7 @@ const SuiviBilletAvion = () => {
                                     <tbody>
                                       <tr>
                                         <td>1</td>
-                                        <td>Paiement des frais d'accompagnement</td>
+                                        <td>Envoi  du billet d’avion</td>
                                         <td>Aucun</td>
                                         <td>
                                           <span className="badge badge-md bg-warning">
@@ -672,66 +541,10 @@ const SuiviBilletAvion = () => {
 
                                         <td>01-12-2021 17:17</td>
                                         <td>
-                                          <button type="button" className="btn btn-md prive-btn-primary">
-                                            <i className="mdi mdi-cloud"></i> Upload
-                                          </button>
-                                          <button type="button" className="btn btn-md btn-info">
-                                            <i className="mdi mdi-pencil"></i> Signé
-                                          </button>
+                                        
                                         </td>
                                       </tr>
-                                      <tr>
-                                        <td>2</td>
-                                        <td>Notification prise rdv entretien</td>
-                                        <td>Aucun</td>
-                                        <td>
-                                          <span className="badge badge-md prive-bg-primary">
-                                            <i className="mdi mdi-check-circle"></i> Terminé
-                                          </span>
-                                        </td>
-
-                                        <td>01-12-2021 17:17</td>
-                                        <td></td>
-                                      </tr>
-                                      <tr>
-                                        <td>3</td>
-                                        <td>Upload signature du contrat d’AVI signé</td>
-                                        <td>Aucun</td>
-                                        <td>
-                                          <span className="badge badge-md prive-bg-primary">
-                                            <i className="mdi mdi-check-circle"></i> Terminé
-                                          </span>
-                                        </td>
-
-                                        <td>01-12-2021 17:17</td>
-                                        <td></td>
-                                      </tr>
-                                      <tr>
-                                        <td>4</td>
-                                        <td>Validation de la signature du contrat</td>
-                                        <td>Aucun</td>
-                                        <td>
-                                          <span className="badge badge-md prive-bg-primary">
-                                            <i className="mdi mdi-check-circle"></i> Terminé
-                                          </span>
-                                        </td>
-
-                                        <td>01-12-2021 17:17</td>
-                                        <td></td>
-                                      </tr>
-                                      <tr>
-                                        <td>5</td>
-                                        <td>Notification paiement accompagnement</td>
-                                        <td>Aucun</td>
-                                        <td>
-                                          <span className="badge badge-md prive-bg-primary">
-                                            <i className="mdi mdi-check-circle"></i> Terminé
-                                          </span>
-                                        </td>
-
-                                        <td>01-12-2021 17:17</td>
-                                        <td></td>
-                                      </tr>
+                                      
                                     </tbody>
                                   </Table>
                                 </div>
@@ -765,11 +578,11 @@ const SuiviBilletAvion = () => {
                                     <tbody>
                                       <tr>
                                         <td>1</td>
-                                        <td>Préparation du contrat d'accompagnement</td>
+                                        <td>Copie de votre passeport </td>
 
                                         <td>
                                           <span className="badge badge-md prive-bg-primary">
-                                            <i className="mdi mdi-check-circle"></i> Généré
+                                            <i className="mdi mdi-check-circle"></i> Terminé
                                           </span>
                                         </td>
 
@@ -782,15 +595,18 @@ const SuiviBilletAvion = () => {
                                           <button type="button" className="btn btn-md prive-btn-primary-transparent">
                                             <i className="mdi mdi-pencil"></i> Télécharger
                                           </button>
+                                          <button type="button" className="btn btn-md prive-btn-primary-transparent">
+                                            <i className="mdi mdi-cloud"></i> Upload
+                                          </button>
                                         </td>
                                       </tr>
                                       <tr>
                                         <td>2</td>
-                                        <td>Contrat signé</td>
+                                        <td>Justificatif de réservation</td>
 
                                         <td>
                                           <span className="badge badge-md prive-bg-primary">
-                                            <i className="mdi mdi-check-circle"></i> Signé
+                                            <i className="mdi mdi-check-circle"></i> Terminer
                                           </span>
                                         </td>
 

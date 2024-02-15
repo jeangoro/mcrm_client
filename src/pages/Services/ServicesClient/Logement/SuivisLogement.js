@@ -61,7 +61,7 @@ const SuiviLogement = () => {
             <BreadCrumbCustom pages={pages} />
           </div>
 
-          <div className="my-content">
+          <div className="my-content2">
             <Row>
               <Col lg={2} className="my-nav-progress-bar">
                 <div className="progress-nav mb-4">
@@ -147,7 +147,7 @@ const SuiviLogement = () => {
                             "rounded-pill"
                           )}
                           onClick={() => {
-                            toggleTab(4, 60);
+                            toggleTab(4, 70);
                           }}
                           tag="button"
                         >
@@ -169,7 +169,7 @@ const SuiviLogement = () => {
                             "rounded-pill"
                           )}
                           onClick={() => {
-                            toggleTab(5, 80);
+                            toggleTab(5, 120);
                           }}
                           tag="button"
                         >

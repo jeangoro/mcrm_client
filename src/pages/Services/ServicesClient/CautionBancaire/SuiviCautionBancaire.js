@@ -57,7 +57,7 @@ const SuiviCautionBancaire = () => {
             <BreadCrumbCustom pages={pages} />
           </div>
 
-          <div className="my-content">
+          <div className="my-content3">
             <Row>
               <Col lg={2} className="my-nav-progress-bar">
                 <div className="progress-nav mb-4">
@@ -99,7 +99,7 @@ const SuiviCautionBancaire = () => {
                             "rounded-pill"
                           )}
                           onClick={() => {
-                            toggleTab(2, 20);
+                            toggleTab(2, 30);
                           }}
                           tag="button"
                         >
@@ -121,7 +121,7 @@ const SuiviCautionBancaire = () => {
                             "rounded-pill"
                           )}
                           onClick={() => {
-                            toggleTab(3, 50);
+                            toggleTab(3, 60);
                           }}
                           tag="button"
                         >
@@ -143,7 +143,7 @@ const SuiviCautionBancaire = () => {
                             "rounded-pill"
                           )}
                           onClick={() => {
-                            toggleTab(4, 80);
+                            toggleTab(4, 100);
                           }}
                           tag="button"
                         >
